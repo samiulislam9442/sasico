@@ -12,7 +12,7 @@
   /* =========================
        Main Container - 1320px
     ========================= */
-  .container-main {
+  .container {
     width: 100%;
     max-width: 1320px;
     margin-inline: auto;

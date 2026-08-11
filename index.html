@@ -20,7 +20,7 @@
                 <div>
                     <img class="max-w-[310px]" src="assets/images/logo-light.svg" alt="logo">
                 </div>
-                <nav>
+                <nav class="hidden xl:block">
                     <ul class="flex bg-black rounded-full p-[4px]">
                         <li class="py-[12px] px-[30px] bg-primary rounded-full text-[18px] font-medium">
                             <a href="#">Home</a>
@@ -70,7 +70,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="flex gap-[10px] items-center justify-center">
+                <div class=" gap-[10px] items-center justify-center hidden sm:flex">
                     <a class="px-[30px] border border-white/30 py-[8px] hover:bg-white hover:text-black duration-300 group bg-black text-white font-semibold rounded-full" href="#">
                         <span>Log In</span>
                         <span class=" py-[4px] px-[5px] -mr-[20px] group-hover:bg-black group-hover:text-white duration-300 rounded-full bg-primary text-black"><i class="fa-solid fa-arrow-right"></i></span>
@@ -80,6 +80,10 @@
                         <span>Log In</span>
                         <span class=" py-[4px] px-[5px] -mr-[20px] group-hover:bg-black group-hover:text-white duration-300 rounded-full bg-white text-black"><i class="fa-solid fa-arrow-right"></i></span>
                     </a>
+                </div>
+                <div class="flex gap-3 text-[26px] xl:hidden">
+                    <span class="text-white"><i class="fa-brands fa-sistrix"></i></span>
+                    <span class="text-white"><i class="fa-solid fa-bars"></i></span>
                 </div>
             </div>
         </header>

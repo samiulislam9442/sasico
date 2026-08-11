@@ -4,7 +4,7 @@
 
 @theme {
 
-    --color-primary: #B9FB6A;
+  --color-primary: #B9FB6A;
 }
 
 @layer components {
@@ -12,9 +12,9 @@
   /* =========================
        Main Container - 1320px
     ========================= */
-  .container {
+  .container-main {
     width: 100%;
-    max-width: 1320px;
+    max-width: 1290px;
     margin-inline: auto;
     padding-inline: 15px;
   }

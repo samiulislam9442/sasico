@@ -14,7 +14,7 @@
     <div class="website flex flex-col min-h-[100vh]">
 
         <!-- =======================================header start================================== -->
-        <header class="header bg-amber-300 py-[20px]">
+        <header class="header absolute top-0.5 z-50 w-full  py-[20px]">
             <div class="container-wide flex justify-between items-center">
                 <div>
                     <img class="max-w-[310px]" src="assets/images/logo-light.svg" alt="logo">
@@ -25,11 +25,11 @@
                             <a href="#">Home</a>
                         </li>
                         <li
-                            class="py-[12px] px-[30px] relative group hover:text-black hover:bg-primary duration-300 text-white  rounded-full text-[18px] font-medium">
+                            class="py-[12px] z-50 px-[30px] relative group hover:text-black hover:bg-primary duration-300 text-white  rounded-full text-[18px] font-medium">
                             <a href="#">Pages</a>
 
                             <ul
-                                class="absolute bg-[#151D1B] min-w-[200px] px-[16px] py-[20px] rounded-sm shadow-xl top-[calc(100%)] -translate-x-[20px] opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-300">
+                                class="absolute z-50 bg-[#151D1B] min-w-[200px] px-[16px] py-[20px] rounded-sm shadow-xl top-[calc(100%)] -translate-x-[20px] opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-300">
                                 <li class="leading-10 text-white  duration-300 hover:bg-white/20 rounded-sm px-3">
                                     <a class="" href="#">Page 01</a>
                                 </li>
@@ -96,19 +96,67 @@
 
         <!-- =======================================main start================================== -->
 
-        <main class="flex-1"></main>
+        <main class="flex-1">
+
+            <!-- =======================================banner start============================= -->
+
+            <section class="banner relative bg-[#090D16] pt-[200px] pb-[130px] overflow-hidden  bg-[url(../images/bannr.svg)] bg-no-repeat bg-center bg-cover">
+
+                <img class="absolute top-0 left-0 z-20 -translate-y-[32%] -translate-x-[50%]"
+                    src="assets/images/download.svg" alt="icon">
+                <img class="absolute  top-0 right-0 z-20 -translate-y-[33%] translate-x-[49%]"
+                    src="assets/images/download.svg" alt="icon">
+
+                <div class="container-main z-50 text-white text-center">
+
+                    <div class="flex items-center flex-col">
+                        <span class="md:text-[22px] text-[16px] font-medium py-[5px] px-[26px] border border-white/40 bg-[#0E1421] rounded-full">Run Your Business on Autopilot</span>
+                        <h1 class="lg:text-[85px] text-[38px] lg:leading-[92px] sm:text-[54px] sm:leading-[60px] font-bold leading-[40px] max-w-[970px] mt-2 mb-[40px]">Next-Gen Tools for
+                            High-Performing Teams</h1>
+                        <p class="max-w-[690px] opacity-70 md:text-[22px] text-[16px] font-semibold mb-[45px]">All-in-one SaaS solution designed to simplify
+                            your daily operations Whether you’re managing
+                            projects, collaborating with teams
+                        </p>
+                        <div class="max-w-[690px] w-[100%] sm:relative flex flex-col gap-2  ">
+                            <input class="w-full bg-[#090D16] border border-white/20 rounded-full py-[20px] rounded-full px-[30px] h-full" type="email"
+                                placeholder="Your email address">
+
+                            <div class="sm:absolute sm:top-[2px] sm:translate-y-[6px] sm:right-[7px]">
+                                <a class="py-[4px] text-black px-[30px] hover:bg-white duration-300 inline-flex items-center justify-between gap-7 rounded-full bg-primary font-semibold"
+                                    href="#">
+                                    <span>Request a Demo</span>
+                                    <span
+                                        class="bg-black text-white py-[8px] px-[10px] -mr-6 inline-block rounded-full"><i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" z-50 mt-[100px]">
+                        <img src="assets/images/dash.webp" alt="">
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <!-- =======================================banner end============================= -->
+
+        </main>
 
         <!-- =======================================main end================================== -->
 
         <!-- =======================================footer start================================== -->
 
-        <footer class="footer relative z-10 pt-[100px] bg-[#090D16] text-white">
+        <footer class="footer relative pt-[100px] bg-[#090D16] text-white">
 
-            <img class="absolute bottom-0 left-[50%] transform -z-10 -translate-x-[50%]"
-                src="assets/images/bright2.webp" alt="icon">
+            <img class="absolute bottom-0 left-[50%] transform z-10 -translate-x-[50%]" src="assets/images/bright2.webp"
+                alt="icon">
 
             <div class="footer-top">
-                <div class="container">
+                <div class="container-main">
                     <div class="grid grid-cols-[1fr] lg:grid-cols-[2fr_4fr] gap-7 justify-between itec lg:mb-[100px]">
                         <div>
                             <img class="max-w-[180px]" src="assets/images/logo-light.svg" alt="logo">
@@ -134,7 +182,7 @@
                             </div>
                         </div>
 
-                        <div class="grid-cols-2 sm:grid-cols-4 grid sm:gap-5 mb-[50px] gap-10">
+                        <div class="grid-cols-2 sm:grid-cols-4 grid sm:gap-5 mb-[50px] lg:mb-0 gap-10">
                             <div class="text-[18px] font-medium">
                                 <h2 class="opacity-70 mb-[40px]">Product</h2>
                                 <ul>
@@ -217,9 +265,9 @@
             </div>
 
 
-            <div class="footer-buttom bg-[#111723] mb-[30px] py-[20px]">
+            <div class="footer-buttom bg-[#111723] z-50 relative mb-[30px] py-[20px]">
 
-                <div class="container flex flex-col gap-5 sm:flex-row items-center justify-between ">
+                <div class="container-main flex flex-col gap-5 sm:flex-row items-center justify-between ">
                     <span class="opacity-70">Sasico,2025 © All rights reserved</span>
                     <span class="flex gap-x-3 items-center group">
                         <span class="font-medium group-hover:text-primary duration-300">Back to top</span>
